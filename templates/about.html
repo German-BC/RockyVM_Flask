@@ -1,12 +1,9 @@
-<!doctype html>
-<html>
-    <head>
-          <title>About</title>
-    </head>
-    <body>
-          <h1>About This Site</h1>
-            <p>Welcome to my simple Flask app built in my home lab.</p>
-              <a href="/">Back to Home</a>
-    </body>
-</html>
+{% extends "base.html" %}
 
+{% block title %}About{% endblock %}
+
+{% block content %}
+<h1>About Page.</h1>
+<p>This page provides information about the app.</p>
+<a class="btn btn-secondary" href="/">Back to Home</a>
+{% endblock %}

@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>My Flask App</title>
-</head>
-<body>
-    <h1>Welcome to My Site!</h1>
-    <p>This is the homepage.</p>
-    <a href="/about">Go to About</a>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<h1>Welcome to My Site!</h1>
+<p>This is the homepage using Bootstrap layout.</p>
+<a class="btn btn-primary" href="/about">About</a>
+{% endblock %}
+
